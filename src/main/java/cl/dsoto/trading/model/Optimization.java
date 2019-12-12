@@ -1,30 +1,25 @@
 package cl.dsoto.trading.model;
 
-import javax.jdo.annotations.*;
+import javax.json.bind.annotation.JsonbTransient;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.List;
 
+import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
+
 /**
  * Created by des01c7 on 22-03-19.
  */
-@PersistenceCapable
-@DatastoreIdentity(strategy= IdGeneratorStrategy.SEQUENCE, sequence="seq_optimization")
 public class Optimization implements Serializable {
+    /** El identificador único de la entidad, inicialmente fijado en <code>NON_PERSISTED_ID</code>. */
+    private long id = NON_PERSISTED_ID;
 
-
-    @Column(name="id_period")
+    @JsonbTransient
     private Period period;
-
-    @Column(name="id_strategy")
     private Strategy strategy;
-
     private Timestamp timestamp;
 
-    @Persistent(mappedBy="optimization")
     private List<Objective> objectives;
-
-    @Persistent(mappedBy="optimization")
     private List<Solution> solutions;
 
     public Optimization(Period period, Strategy strategy, Timestamp timestamp, List<Objective> objectives, List<Solution> solutions) {
@@ -33,6 +28,23 @@ public class Optimization implements Serializable {
         this.timestamp = timestamp;
         this.objectives = objectives;
         this.solutions = solutions;
+    }
+
+    public Optimization(long id, Period period, Strategy strategy, Timestamp timestamp, List<Objective> objectives, List<Solution> solutions) {
+        this.id = id;
+        this.period = period;
+        this.strategy = strategy;
+        this.timestamp = timestamp;
+        this.objectives = objectives;
+        this.solutions = solutions;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public Period getPeriod() {

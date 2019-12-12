@@ -1,25 +1,33 @@
 package cl.dsoto.trading.model;
 
-import javax.jdo.annotations.*;
 import java.io.Serializable;
+
+import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
 
 /**
  * Created by des01c7 on 22-03-19.
  */
-@PersistenceCapable
-@DatastoreIdentity(strategy= IdGeneratorStrategy.SEQUENCE, sequence="seq_strategy")
 public class Strategy implements Serializable {
+    /** El identificador único de la entidad, inicialmente fijado en <code>NON_PERSISTED_ID</code>. */
+    private long id = NON_PERSISTED_ID;
 
     private String name;
     private int variables;
-
-    @Extension(vendorName="datanucleus", key="enum-value-getter", value="getValue")
     private ProblemType type;
 
-    public Strategy(String name, int variables, ProblemType type) {
+    public Strategy(long id, String name, int variables, ProblemType type) {
+        this.id = id;
         this.name = name;
         this.variables = variables;
         this.type = type;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {

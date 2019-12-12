@@ -1,29 +1,29 @@
 package cl.dsoto.trading.model;
 
-import javax.jdo.annotations.DatastoreIdentity;
-import javax.jdo.annotations.IdGeneratorStrategy;
-import javax.jdo.annotations.PersistenceCapable;
 import java.io.Serializable;
 
 /**
  * @author Andrés Farías on 8/23/16.
  */
-@PersistenceCapable
-@DatastoreIdentity(strategy= IdGeneratorStrategy.SEQUENCE, sequence="seq_problem_type")
-public class ProblemType implements Serializable {
+public enum ProblemType implements Serializable {
 
-    //BINARY("Codificacón binaria"),
-    //INTEGER("Codificación entera"),
-    //REAL(3, "Codificación real");
+    BINARY(1, "Codificacón binaria"),
+    INTEGER(2, "Codificación entera"),
+    REAL(3, "Codificación real");
 
-    static ProblemType INTEGER = new ProblemType("Codificación entera");
-    static ProblemType BINARY = new ProblemType("Codificacón binaria");
+    /** Identificador único de la base de datos */
+    private long id;
 
     /** Nombre o descripción del cambio */
     private String name;
 
-    ProblemType(String name) {
+    ProblemType(long id, String name) {
+        this.id = id;
         this.name = name;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getName() {
@@ -34,6 +34,22 @@ public class ProblemType implements Serializable {
         this.name = name;
     }
 
+    /**
+     * Este método es responsable de retornar el AuditActionType asociado al ID <code>idAuditActionType</code>.
+     *
+     * @param idProblemType El identificador del AuditActionType.
+     *
+     * @return El objeto que representa la acción de auditoría.
+     */
+    public static ProblemType valueOf(long idProblemType) {
+        for (ProblemType problemType : values()) {
+            if (problemType.getId() == idProblemType) {
+                return problemType;
+            }
+        }
+
+        throw new IllegalArgumentException("No hay un tipo de problema con ID=" + idProblemType);
+    }
 
 }
 

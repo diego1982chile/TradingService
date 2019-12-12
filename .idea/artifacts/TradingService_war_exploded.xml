@@ -8,13 +8,12 @@
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-core:5.2.2" />
-          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-api-jdo:5.2.2" />
-          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-rdbms:5.2.1" />
-          <element id="library" level="project" name="Maven: org.datanucleus:javax.jdo:3.2.0-m12" />
-          <element id="library" level="project" name="Maven: javax.transaction:transaction-api:1.1" />
-          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-jdo-query:5.0.9" />
           <element id="library" level="project" name="Maven: org-ta4j:ta4j-core:0.12-SNAPSHOT" />
           <element id="library" level="project" name="Maven: org-ta4j:ta4j-examples:0.12-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.uma.jmetal:jmetal-core:5.7-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.uma.jmetal:jmetal-algorithm:5.7-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.uma.jmetal:jmetal-problem:5.7-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org.uma.jmetal:jmetal-exec:5.7-SNAPSHOT" />
           <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />

@@ -1,100 +1,41 @@
 package cl.dsoto.trading.model;
 
 import org.ta4j.core.BaseBar;
-import org.ta4j.core.Decimal;
-import org.ta4j.core.TimeSeries;
 
-import javax.jdo.annotations.*;
+import javax.json.bind.annotation.JsonbTransient;
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Timestamp;
 import java.time.ZonedDateTime;
-import java.util.ArrayList;
-import java.util.List;
+
+import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
 
 /**
  * Created by des01c7 on 29-03-19.
  */
-@PersistenceCapable
-@DatastoreIdentity(strategy= IdGeneratorStrategy.SEQUENCE, sequence="seq_bar_period")
-public class PeriodBar implements Serializable {
+public class PeriodBar extends BaseBar implements Serializable {
 
-    @Column(name="id_period")
+    /** El identificador único de la entidad, inicialmente fijado en <code>NON_PERSISTED_ID</code>. */
+    private long id = NON_PERSISTED_ID;
+
+    @JsonbTransient
     Period period;
 
-    @Column(name="end_time")
-    ZonedDateTime endTime;
-
-    @Column(name="open")
-    double openPrice;
-
-    @Column(name="high")
-    double highPrice;
-
-    @Column(name="low")
-    double lowPrice;
-
-    @Column(name="close")
-    double closePrice;
-
-    double volume;
-
-    public PeriodBar(Period period, ZonedDateTime endTime, double openPrice, double highPrice, double lowPrice, double closePrice, double volume) {
+    public PeriodBar(long id, ZonedDateTime endTime, double openPrice, double highPrice, double lowPrice, double closePrice, double volume, Period period) {
+        super(endTime, openPrice, highPrice, lowPrice, closePrice, volume);
+        this.id = id;
         this.period = period;
-        this.endTime = endTime;
-        this.openPrice = openPrice;
-        this.highPrice = highPrice;
-        this.lowPrice = lowPrice;
-        this.closePrice = closePrice;
-        this.volume = volume;
     }
 
-    public ZonedDateTime getEndTime() {
-        return endTime;
+    public PeriodBar(ZonedDateTime endTime, double openPrice, double highPrice, double lowPrice, double closePrice, double volume, Period period) {
+        super(endTime, openPrice, highPrice, lowPrice, closePrice, volume);
+        this.period = period;
     }
 
-    public void setEndTime(ZonedDateTime endTime) {
-        this.endTime = endTime;
+    public long getId() {
+        return id;
     }
 
-    public double getOpenPrice() {
-        return openPrice;
-    }
-
-    public void setOpenPrice(double openPrice) {
-        this.openPrice = openPrice;
-    }
-
-    public double getHighPrice() {
-        return highPrice;
-    }
-
-    public void setHighPrice(double highPrice) {
-        this.highPrice = highPrice;
-    }
-
-    public double getLowPrice() {
-        return lowPrice;
-    }
-
-    public void setLowPrice(double lowPrice) {
-        this.lowPrice = lowPrice;
-    }
-
-    public double getClosePrice() {
-        return closePrice;
-    }
-
-    public void setClosePrice(double closePrice) {
-        this.closePrice = closePrice;
-    }
-
-    public double getVolume() {
-        return volume;
-    }
-
-    public void setVolume(double volume) {
-        this.volume = volume;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public Period getPeriod() {
@@ -103,9 +44,5 @@ public class PeriodBar implements Serializable {
 
     public void setPeriod(Period period) {
         this.period = period;
-    }
-
-    BaseBar map() {
-        return new BaseBar(this.endTime, this.openPrice, this.highPrice, this.lowPrice, this.closePrice, this.volume);
     }
 }

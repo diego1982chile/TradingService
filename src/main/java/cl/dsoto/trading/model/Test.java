@@ -5,11 +5,15 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.List;
 
+import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
+
 /**
  * Created by des01c7 on 29-03-19.
  */
 public class Test implements Serializable {
 
+    /** El identificador único de la entidad, inicialmente fijado en <code>NON_PERSISTED_ID</code>. */
+    private long id = NON_PERSISTED_ID;
 
     String name;
     Timestamp timestamp;
@@ -34,6 +38,27 @@ public class Test implements Serializable {
         this.rewardRiskRatio = rewardRiskRatio;
         this.vsBuyAndHold = vsBuyAndHold;
         this.cashFlow = cashFlow;
+    }
+
+    public Test(long id, String name, Timestamp timestamp, Date start, Date end, Period period, int trades, double rewardRiskRatio, double vsBuyAndHold, double cashFlow) {
+        this.id = id;
+        this.name = name;
+        this.timestamp = timestamp;
+        this.start = start;
+        this.end = end;
+        this.period = period;
+        this.trades = trades;
+        this.rewardRiskRatio = rewardRiskRatio;
+        this.vsBuyAndHold = vsBuyAndHold;
+        this.cashFlow = cashFlow;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {

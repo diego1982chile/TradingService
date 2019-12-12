@@ -3,32 +3,30 @@ package cl.dsoto.trading.model;
 import org.ta4j.core.*;
 import ta4jexamples.strategies.*;
 
-import javax.jdo.annotations.*;
 import java.io.Serializable;
 import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
+import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
+
 /**
  * Created by des01c7 on 29-03-19.
  */
-@PersistenceCapable
-@DatastoreIdentity(strategy= IdGeneratorStrategy.SEQUENCE, sequence="seq_period")
 public class Period implements Serializable {
+
+    private long id = NON_PERSISTED_ID;
 
     String name;
     Timestamp timestamp;
     Date start;
     Date end;
 
-    @Column(name = "id_time_frame")
     TimeFrame timeFrame;
 
-    @Persistent(mappedBy="period")
     List<Optimization> optimizations = new ArrayList<>();
 
-    @Persistent(mappedBy="period")
     List<PeriodBar> bars = new ArrayList<>();
 
     public List<PeriodBar> getBars() {
@@ -45,6 +43,25 @@ public class Period implements Serializable {
         this.start = start;
         this.end = end;
         this.timeFrame = timeFrame;
+    }
+
+    public Period(long id, String name, Timestamp timestamp, Date start, Date end, TimeFrame timeFrame) {
+        this.id = id;
+        this.name = name;
+        this.timestamp = timestamp;
+        this.start = start;
+        this.end = end;
+        this.timeFrame = timeFrame;
+        this.optimizations = optimizations;
+        this.bars = bars;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -114,7 +131,7 @@ public class Period implements Serializable {
         TimeSeries series = new BaseTimeSeries(period.getName());
 
         for (PeriodBar periodBar : period.getBars()) {
-            series.addBar(periodBar.map());
+            series.addBar(periodBar);
         }
 
         for (Optimization optimization : period.getOptimizationsOfType(ProblemType.INTEGER)) {
@@ -162,7 +179,7 @@ public class Period implements Serializable {
             for (Solution solution : optimization.getSolutions()) {
 
                 for (int i = 0; i < solution.getValues().size(); i++) {
-                    boolean value = (Boolean) solution.getValues().get(i).getValue();
+                    boolean value = (Boolean) solution.getValues().get(i);
 
                     if (value) {
 

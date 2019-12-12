@@ -37,20 +37,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-web-api:8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-core:5.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-api-jdo:5.2.2" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-rdbms:5.2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:javax.jdo:3.2.0-m12" level="project" />
-    <orderEntry type="library" name="Maven: javax.transaction:transaction-api:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-jdo-query:5.0.9" level="project" />
-    <orderEntry type="library" name="Maven: org-ta4j:ta4j-core:0.12-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org-ta4j:ta4j-examples:0.12-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
-    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
-    <orderEntry type="library" name="Maven: org.omnifaces:omnifaces:3.4.1" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -61,5 +47,18 @@
         <jarDirectory url="file://$MODULE_DIR$/src/main/resources/META-INF" recursive="false" />
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Maven: javax:javaee-web-api:8.0" level="project" />
+    <orderEntry type="library" name="Maven: org.datanucleus:datanucleus-core:5.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org-ta4j:ta4j-core:0.12-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org-ta4j:ta4j-examples:0.12-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.uma.jmetal:jmetal-core:5.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.uma.jmetal:jmetal-algorithm:5.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.uma.jmetal:jmetal-problem:5.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.uma.jmetal:jmetal-exec:5.7-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.21" level="project" />
+    <orderEntry type="library" name="Maven: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Maven: org.omnifaces:omnifaces:3.4.1" level="project" />
   </component>
 </module>

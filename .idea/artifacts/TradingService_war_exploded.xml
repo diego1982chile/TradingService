@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TradingService:war exploded">
+    <output-path>$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TradingService" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-core:5.2.2" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-api-jdo:5.2.2" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-rdbms:5.2.1" />
+          <element id="library" level="project" name="Maven: org.datanucleus:javax.jdo:3.2.0-m12" />
+          <element id="library" level="project" name="Maven: javax.transaction:transaction-api:1.1" />
+          <element id="library" level="project" name="Maven: org.datanucleus:datanucleus-jdo-query:5.0.9" />
+          <element id="library" level="project" name="Maven: org-ta4j:ta4j-core:0.12-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: org-ta4j:ta4j-examples:0.12-SNAPSHOT" />
+          <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.21" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: org.omnifaces:omnifaces:3.4.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="TradingService/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Objective.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Value.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/ProblemType.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/TimeFrame.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Period.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/factories/DataSourceFactory.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Test.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/PeriodBar.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/managers/TestManager.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Solution.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Strategies.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Strategy.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Optimization.java

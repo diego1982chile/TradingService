@@ -8,6 +8,7 @@ cl/dsoto/trading/model/Strategy.class
 cl/dsoto/trading/model/Period.class
 cl/dsoto/trading/managers/TestManager.class
 cl/dsoto/trading/daos/ValueDAO.class
+cl/dsoto/trading/filters/CORSFilter.class
 cl/dsoto/trading/daos/ObjectiveDAO.class
 cl/dsoto/trading/model/Optimization.class
 cl/dsoto/trading/services/ApplicationService.class

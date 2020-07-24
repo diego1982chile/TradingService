@@ -4,6 +4,7 @@
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/PeriodBar.java
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/managers/TestManager.java
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/managers/TestManagerImpl.java
+/home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/filters/CORSFilter.java
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Strategy.java
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/services/PeriodService.java
 /home/des01c7/IdeaProjects/TradingService/src/main/java/cl/dsoto/trading/model/Objective.java

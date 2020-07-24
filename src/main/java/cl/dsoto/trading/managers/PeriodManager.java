@@ -212,7 +212,7 @@ public class PeriodManager {
         for (cl.dsoto.trading.model.Strategy strategy : strategies) {
             GenerationalGeneticAlgorithmStockMarketIntegerRunner runner =
                     new GenerationalGeneticAlgorithmStockMarketIntegerRunner(strategy.getName(), timeSeries, strategy.getVariables());
-            Optimization optimization = runner.run();
+            Optimization optimization = runner.run(strategy);
             optimization.setPeriod(period);
             period.getOptimizations().add(optimization);
             updateStrategy(optimization, strategy.getName());
@@ -223,7 +223,7 @@ public class PeriodManager {
         for (cl.dsoto.trading.model.Strategy strategy : strategies) {
             GenerationalGeneticAlgorithmStockMarketRunner runner =
                     new GenerationalGeneticAlgorithmStockMarketRunner(strategy.getName(), timeSeries, strategy.getVariables());
-            Optimization optimization = runner.run();
+            Optimization optimization = runner.run(strategy);
             optimization.setPeriod(period);
             period.getOptimizations().add(optimization);
         }

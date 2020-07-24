@@ -28,10 +28,23 @@ public class PeriodService {
     static private final Logger logger = Logger.getLogger(PeriodService.class.getName());
 
     @GET
-    public Response getLast(@QueryParam("periods") @DefaultValue("10") int periods) {
+    public Response getLast(@QueryParam("periods") @DefaultValue("20") int periods) {
         try {
             List<Period> periodList = periodManager.getLast(periods);
             return Response.ok(periodList).build();
+        }
+        catch (Exception e) {
+            logger.log(Level.SEVERE, e.getMessage());
+        }
+        return Response.serverError().build();
+    }
+
+    @GET
+    @Path("{periodId}")
+    public Response getPeriodById(@PathParam("periodId") long periodId) {
+        try {
+            Period period = periodManager.getPeriodById(periodId);
+            return Response.ok(period).build();
         }
         catch (Exception e) {
             logger.log(Level.SEVERE, e.getMessage());

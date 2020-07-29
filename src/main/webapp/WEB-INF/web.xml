@@ -13,7 +13,7 @@
         <name>java:global/TradingDS</name>
         <!--class-name>org.postgresql.ds.PGSimpleDataSource</class-name-->
         <class-name>org.postgresql.xa.PGXADataSource</class-name>
-        <server-name>localhost</server-name>
+        <server-name>dnssemantikos</server-name>
         <port-number>5432</port-number>
         <database-name>trading_dev</database-name>
         <user>trader</user>

@@ -16,6 +16,31 @@ import static cl.dsoto.trading.model.DAO.NON_PERSISTED_ID;
  */
 public class Period implements Serializable {
 
+    private static final String GLOBAL_EXTREMA = "GlobalExtremaStrategy";
+
+    private static final String TUNNEL = "TunnelStrategy";
+
+    private static final String CCI_CORRECTION = "CCICorrectionStrategy";
+
+    private static final String BAGOVINO = "BagovinoStrategy";
+
+    private static final String MOVING_AVERAGES = "MovingAveragesStrategy";
+
+    private static final String RSI_2 = "RSI2Strategy";
+
+    private static final String PARABOLIC_SAR = "ParabolicSARStrategy";
+
+    private static final String MOVING_MOMENTUM = "MovingMomentumStrategy";
+
+    private static final String STOCHASTIC = "StochasticStrategy";
+
+    private static final String MACD = "MACDStrategy";
+
+    private static final String FX_BOOTCAMP = "FXBootCampStrategy";
+
+    private static final String WINSLOW = "WinslowStrategy";
+
+    /** El identificador único de la entidad, inicialmente fijado en <code>NON_PERSISTED_ID</code>. */
     private long id = NON_PERSISTED_ID;
 
     String name;
@@ -28,6 +53,16 @@ public class Period implements Serializable {
     List<Optimization> optimizations = new ArrayList<>();
 
     List<PeriodBar> bars = new ArrayList<>();
+
+    List<ForwardTest> forwardTests = new ArrayList<>();
+
+    public List<ForwardTest> getForwardTests() {
+        return forwardTests;
+    }
+
+    public void setForwardTests(List<ForwardTest> forwardTests) {
+        this.forwardTests = forwardTests;
+    }
 
     public List<PeriodBar> getBars() {
         return bars;
@@ -52,8 +87,6 @@ public class Period implements Serializable {
         this.start = start;
         this.end = end;
         this.timeFrame = timeFrame;
-        this.optimizations = optimizations;
-        this.bars = bars;
     }
 
     public long getId() {
@@ -136,40 +169,40 @@ public class Period implements Serializable {
 
         for (Optimization optimization : period.getOptimizationsOfType(ProblemType.INTEGER)) {
             switch (optimization.getStrategy().getName()) {
-                case Strategies.GlobalExtremaStrategy:
+                case GLOBAL_EXTREMA:
                     GlobalExtremaStrategy.mapFrom(optimization);
                     break;
-                case Strategies.TunnelStrategy:
+                case TUNNEL:
                     TunnelStrategy.mapFrom(optimization);
                     break;
-                case Strategies.CCICorrectionStrategy:
+                case CCI_CORRECTION:
                     CCICorrectionStrategy.mapFrom(optimization);
                     break;
-                case Strategies.BagovinoStrategy:
+                case BAGOVINO:
                     BagovinoStrategy.mapFrom(optimization);
                     break;
-                case Strategies.MovingAveragesStrategy:
+                case MOVING_AVERAGES:
                     MovingAveragesStrategy.mapFrom(optimization);
                     break;
-                case Strategies.RSI2Strategy:
+                case RSI_2:
                     RSI2Strategy.mapFrom(optimization);
                     break;
-                case Strategies.ParabolicSARStrategy:
+                case PARABOLIC_SAR:
                     ParabolicSARStrategy.mapFrom(optimization);
                     break;
-                case Strategies.MovingMomentumStrategy:
+                case MOVING_MOMENTUM:
                     MovingMomentumStrategy.mapFrom(optimization);
                     break;
-                case Strategies.StochasticStrategy:
+                case STOCHASTIC:
                     StochasticStrategy.mapFrom(optimization);
                     break;
-                case Strategies.MACDStrategy:
+                case MACD:
                     MACDStrategy.mapFrom(optimization);
                     break;
-                case Strategies.FXBootCampStrategy:
+                case FX_BOOTCAMP:
                     FXBootCampStrategy.mapFrom(optimization);
                     break;
-                case Strategies.WinslowStrategy:
+                case WINSLOW:
                     WinslowStrategy.mapFrom(optimization);
                     break;
             }
@@ -184,40 +217,40 @@ public class Period implements Serializable {
                     if (value) {
 
                         switch (i) {
-                            case Strategies.CCICorrectionStrategyId:
+                            case 0:
                                 strategies.add(CCICorrectionStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.GlobalExtremaStrategyId:
+                            case 1:
                                 strategies.add(GlobalExtremaStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.MovingMomentumStrategyId:
+                            case 2:
                                 strategies.add(MovingMomentumStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.RSI2StrategyId:
+                            case 3:
                                 strategies.add(RSI2Strategy.buildStrategy(series));
                                 break;
-                            case Strategies.MACDStrategyId:
+                            case 4:
                                 strategies.add(MACDStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.StochasticStrategyId:
+                            case 5:
                                 strategies.add(StochasticStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.ParabolicSARStrategyId:
+                            case 6:
                                 strategies.add(ParabolicSARStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.MovingAveragesStrategyId:
+                            case 7:
                                 strategies.add(MovingAveragesStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.BagovinoStrategyId:
+                            case 8:
                                 strategies.add(BagovinoStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.FXBootCampStrategyId:
+                            case 9:
                                 strategies.add(FXBootCampStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.TunnelStrategyId:
+                            case 10:
                                 strategies.add(TunnelStrategy.buildStrategy(series));
                                 break;
-                            case Strategies.WinslowStrategyId:
+                            case 11:
                                 strategies.add(WinslowStrategy.buildStrategy(series));
                                 break;
                         }

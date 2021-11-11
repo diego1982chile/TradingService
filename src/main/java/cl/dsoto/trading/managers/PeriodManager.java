@@ -45,6 +45,18 @@ public class PeriodManager {
         return periodDAO.getLast(periods);
     }
 
+    public List<Period> getLast(int timeFrameId, int periods) throws Exception {
+        List<Period> periodList = new ArrayList<>();
+
+        for (Period period : periodDAO.getLast(periods)) {
+            if(period.getTimeFrame().equals(TimeFrame.valueOf(timeFrameId))) {
+                periodList.add(period);
+            }
+        }
+
+        return periodList;
+    }
+
     public Period createFromFile(String file) throws Exception {
         TimeSeries timeSeries = CsvTicksLoader.load(file);
         String name = file;

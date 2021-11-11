@@ -1,8 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b41f5305-8c72-4863-bff5-7bb1d529992c" name="Default" comment="">
+    <list default="true" id="b41f5305-8c72-4863-bff5-7bb1d529992c" name="Default" comment="Se crea rama nueva sin orm con datasource provisto por payara micro">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ForwardTestDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/ForwardTestManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/ForwardTestMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/PeriodMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/StrategyHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTestBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestBarView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodBarView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ForwardTestService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/daos/BarDAO.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/daos/BarDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/daos/PeriodDAO.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/daos/PeriodDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/managers/PeriodManager.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/managers/PeriodManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/model/Period.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/model/Period.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/model/TimeFrame.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/model/TimeFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/services/PeriodService.class" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/classes/cl/dsoto/trading/services/PeriodService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/jmetal-exec-5.7-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/jmetal-exec-5.7-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/ta4j-core-0.12-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/ta4j-core-0.12-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/ta4j-examples-0.12-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT/WEB-INF/lib/ta4j-examples-0.12-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/daos/BarDAO.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/daos/BarDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/daos/PeriodDAO.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/daos/PeriodDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/managers/PeriodManager.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/managers/PeriodManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/model/Period.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/model/Period.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/model/TimeFrame.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/model/TimeFrame.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/services/PeriodService.class" afterPath="$PROJECT_DIR$/target/classes/cl/dsoto/trading/services/PeriodService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java" afterPath="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="TradingService.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,36 +64,92 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PeriodService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CORSFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/filters/CORSFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Period.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1638#1639#0" expanded="false" />
+                <element signature="e#1673#1674#0" expanded="false" />
+                <element signature="e#1740#1741#0" expanded="false" />
+                <element signature="e#1788#1789#0" expanded="false" />
+                <element signature="e#1828#1829#0" expanded="false" />
+                <element signature="e#1855#1856#0" expanded="false" />
+                <element signature="e#1904#1905#0" expanded="false" />
+                <element signature="e#1936#1937#0" expanded="false" />
+                <element signature="e#2502#2503#0" expanded="false" />
+                <element signature="e#2527#2528#0" expanded="false" />
+                <element signature="e#2561#2562#0" expanded="false" />
+                <element signature="e#2589#2590#0" expanded="false" />
+                <element signature="e#2620#2621#0" expanded="false" />
+                <element signature="e#2647#2648#0" expanded="false" />
+                <element signature="e#2687#2688#0" expanded="false" />
+                <element signature="e#2719#2720#0" expanded="false" />
+                <element signature="e#2758#2759#0" expanded="false" />
+                <element signature="e#2790#2791#0" expanded="false" />
+                <element signature="e#2843#2844#0" expanded="false" />
+                <element signature="e#2885#2886#0" expanded="false" />
+                <element signature="e#2915#2916#0" expanded="false" />
+                <element signature="e#2943#2944#0" expanded="false" />
+                <element signature="e#2983#2984#0" expanded="false" />
+                <element signature="e#3017#3018#0" expanded="false" />
+                <element signature="e#3045#3046#0" expanded="false" />
+                <element signature="e#3071#3072#0" expanded="false" />
+                <element signature="e#3107#3108#0" expanded="false" />
+                <element signature="e#3137#3138#0" expanded="false" />
+                <element signature="e#3176#3177#0" expanded="false" />
+                <element signature="e#3208#3209#0" expanded="false" />
+                <element signature="e#3261#3262#0" expanded="false" />
+                <element signature="e#3303#3304#0" expanded="false" />
+                <element signature="e#3355#3356#0" expanded="false" />
+                <element signature="e#3391#3392#0" expanded="false" />
+                <element signature="e#3461#3462#0" expanded="false" />
+                <element signature="e#3511#3512#0" expanded="false" />
+                <element signature="e#8413#8414#0" expanded="false" />
+                <element signature="e#8440#8441#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PeriodBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/PeriodBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1106#1107#0" expanded="false" />
+                <element signature="e#1131#1132#0" expanded="false" />
+                <element signature="e#1165#1166#0" expanded="false" />
+                <element signature="e#1193#1194#0" expanded="false" />
+                <element signature="e#1226#1227#0" expanded="false" />
+                <element signature="e#1255#1256#0" expanded="false" />
+                <element signature="e#1299#1300#0" expanded="false" />
+                <element signature="e#1335#1336#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,71 +157,111 @@
       <file leaf-file-name="BarDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeriodDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="85" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PeriodManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2983">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="3045">
+              <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Solution.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Solution.java">
+      <file leaf-file-name="DAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Strategies.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategies.java">
+      <file leaf-file-name="PeriodDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+            <state relative-caret-position="15">
+              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Strategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategy.java">
+      <file leaf-file-name="SolutionDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/SolutionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="195">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Objective.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Objective.java">
+      <file leaf-file-name="StrategyDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/StrategyDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="330">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PeriodView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#704#705#0" expanded="false" />
+                <element signature="e#731#732#0" expanded="false" />
+                <element signature="e#784#785#0" expanded="false" />
+                <element signature="e#816#817#0" expanded="false" />
+                <element signature="e#862#863#0" expanded="false" />
+                <element signature="e#889#890#0" expanded="false" />
+                <element signature="e#1508#1509#0" expanded="false" />
+                <element signature="e#1533#1534#0" expanded="false" />
+                <element signature="e#1567#1568#0" expanded="false" />
+                <element signature="e#1595#1596#0" expanded="false" />
+                <element signature="e#1626#1627#0" expanded="false" />
+                <element signature="e#1653#1654#0" expanded="false" />
+                <element signature="e#1693#1694#0" expanded="false" />
+                <element signature="e#1725#1726#0" expanded="false" />
+                <element signature="e#1764#1765#0" expanded="false" />
+                <element signature="e#1796#1797#0" expanded="false" />
+                <element signature="e#1849#1850#0" expanded="false" />
+                <element signature="e#1891#1892#0" expanded="false" />
+                <element signature="e#1921#1922#0" expanded="false" />
+                <element signature="e#1949#1950#0" expanded="false" />
+                <element signature="e#1989#1990#0" expanded="false" />
+                <element signature="e#2023#2024#0" expanded="false" />
+                <element signature="e#2051#2052#0" expanded="false" />
+                <element signature="e#2077#2078#0" expanded="false" />
+                <element signature="e#2113#2114#0" expanded="false" />
+                <element signature="e#2143#2144#0" expanded="false" />
+                <element signature="e#2184#2185#0" expanded="false" />
+                <element signature="e#2221#2222#0" expanded="false" />
+                <element signature="e#2281#2282#0" expanded="false" />
+                <element signature="e#2333#2334#0" expanded="false" />
+                <element signature="e#2381#2382#0" expanded="false" />
+                <element signature="e#2425#2426#0" expanded="false" />
+                <element signature="e#2607#2608#0" expanded="false" />
+                <element signature="e#2645#2646#0" expanded="false" />
+                <element signature="e#2707#2708#0" expanded="false" />
+                <element signature="e#2761#2762#0" expanded="false" />
+                <element signature="e#2805#2806#0" expanded="false" />
+                <element signature="e#2845#2846#0" expanded="false" />
+                <element signature="e#2911#2912#0" expanded="false" />
+                <element signature="e#2969#2970#0" expanded="false" />
+                <element signature="e#3004#3005#0" expanded="false" />
+                <element signature="e#3035#3036#0" expanded="false" />
+                <element signature="e#3083#3084#0" expanded="false" />
+                <element signature="e#3123#3124#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,26 +292,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Value.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/factories/DataSourceFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/repositories/JDOProducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ProblemType.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategy.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/SolutionDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ObjectiveDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/OptimizationDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/SolutionDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/StrategyDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ValueDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/OptimizationManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategies.java" />
@@ -185,16 +312,37 @@
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/StrategyManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/StrategyManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/OptimizationManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ApplicationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Optimization.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Objective.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Solution.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/PeriodBar.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/filters/CORSFilter.java" />
+        <option value="$MAVEN_REPOSITORY$/org/uma/jmetal/jmetal-exec/5.7-SNAPSHOT/jmetal-exec-5.7-SNAPSHOT.jar!/org/uma/jmetal/runner/singleobjective/GenerationalGeneticAlgorithmStockMarketIntegerRunner.class" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/dtos/PeriodBarDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/StrategyHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/dtos/PeriodDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodView.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTestBar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ForwardTestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/ForwardTestManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ForwarTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/ForwardTestMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ForwardTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestBarView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/PeriodMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodBarView.java" />
       </list>
     </option>
   </component>
@@ -266,6 +414,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -283,6 +432,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,7 +519,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cl" />
+              <option name="myItemId" value="trading" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trading" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -383,10 +602,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -420,41 +635,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cl" />
+              <option name="myItemId" value="trading" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TradingService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="trading" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38834357" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TradingWeb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js-jscs-nodeInterpreter" value="/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model" />
+      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers" />
+      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cl.dsoto.trading.model.views" />
+      <recent name="cl.dsoto.trading.managers" />
+      <recent name="cl.dsoto.trading.services" />
+      <recent name="cl.dsoto.trading.mappers" />
+      <recent name="cl.dsoto.trading.daos" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cl.dsoto.trading.model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers" />
-      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos" />
-      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/java/cl/dsoto/trading" />
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Payara Micro">
@@ -894,8 +1147,8 @@
     </configuration>
     <configuration default="false" name="Payara Micro" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$USER_HOME$/Descargas/payara-micro-5.194.jar" />
-      <option name="PROGRAM_PARAMETERS" value="--deploy $PROJECT_DIR$/target/TradingService-1.0-SNAPSHOT.war" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../../Descargas/payara-micro-5.194.jar" />
+      <option name="PROGRAM_PARAMETERS" value="--deploy $PROJECT_DIR$/target/TradingService.war --port 8181" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -923,50 +1176,113 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576007106035</updated>
-      <workItem from="1576007109645" duration="42985000" />
-      <workItem from="1636667064442" duration="77000" />
+      <workItem from="1576007109645" duration="47139000" />
+      <workItem from="1576504558263" duration="9509000" />
+      <workItem from="1582037514860" duration="1375000" />
+      <workItem from="1595566046139" duration="1427000" />
+      <workItem from="1595605767142" duration="3992000" />
+      <workItem from="1595616501906" duration="528000" />
+      <workItem from="1595617070567" duration="1142000" />
+      <workItem from="1595622936182" duration="5303000" />
+      <workItem from="1595633596228" duration="3350000" />
+      <workItem from="1595637107958" duration="9497000" />
+      <workItem from="1600968300923" duration="21058000" />
+      <workItem from="1601676797095" duration="991000" />
+      <workItem from="1601678009531" duration="198000" />
+      <workItem from="1601678720079" duration="14771000" />
+      <workItem from="1602023147199" duration="3213000" />
+      <workItem from="1602080156727" duration="6677000" />
+      <workItem from="1602278023346" duration="11827000" />
+      <workItem from="1603042553195" duration="10977000" />
+      <workItem from="1603238914802" duration="3714000" />
+      <workItem from="1604409205152" duration="617000" />
+      <workItem from="1604444598616" duration="92000" />
+      <workItem from="1604878228892" duration="1473000" />
+      <workItem from="1604881616981" duration="12195000" />
+      <workItem from="1605567316937" duration="441000" />
+      <workItem from="1605567799544" duration="80000" />
+      <workItem from="1605567945392" duration="746000" />
+      <workItem from="1605667997436" duration="7654000" />
+      <workItem from="1606173230452" duration="1989000" />
+      <workItem from="1606426729130" duration="1288000" />
+      <workItem from="1606576037135" duration="1399000" />
+      <workItem from="1606582087656" duration="638000" />
+      <workItem from="1606664022544" duration="22380000" />
+      <workItem from="1607359249790" duration="2058000" />
+      <workItem from="1607454147935" duration="593000" />
+      <workItem from="1607474183812" duration="1215000" />
+      <workItem from="1607571730108" duration="59000" />
+      <workItem from="1607571811408" duration="1204000" />
+      <workItem from="1607575149004" duration="52000" />
+      <workItem from="1607575246060" duration="1916000" />
+      <workItem from="1611581665639" duration="8000" />
+      <workItem from="1611581723386" duration="1478000" />
+      <workItem from="1612359912432" duration="760000" />
+      <workItem from="1612449189804" duration="34000" />
+      <workItem from="1613227667783" duration="635000" />
+      <workItem from="1613684492771" duration="628000" />
+      <workItem from="1613744180073" duration="1094000" />
+      <workItem from="1615221673105" duration="2546000" />
+      <workItem from="1615227155627" duration="16611000" />
+      <workItem from="1615904594409" duration="1874000" />
+      <workItem from="1615941269208" duration="627000" />
+      <workItem from="1617910432684" duration="477000" />
+      <workItem from="1620097812917" duration="10744000" />
+      <workItem from="1623803986153" duration="2778000" />
+      <workItem from="1628534896274" duration="7177000" />
+      <workItem from="1628799624496" duration="1335000" />
+      <workItem from="1629742610614" duration="645000" />
+      <workItem from="1636633865638" duration="2667000" />
     </task>
+    <task id="LOCAL-00001" summary="Se crea rama nueva sin orm con datasource provisto por payara micro">
+      <created>1576193521787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576193521787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43062000" />
+    <option name="totallyTimeSpent" value="266895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1602" height="724" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45359477" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1758665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41960785" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2939189" sideWeight="0.13671373" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23876765" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21245186" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42226148" sideWeight="0.86328626" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41960785" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3533569" sideWeight="0.5885751" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.49743262" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21630295" sideWeight="0.510929" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21630295" sideWeight="0.48039216" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21566111" sideWeight="0.51960784" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31764707" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45359477" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28104576" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -981,6 +1297,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se crea rama nueva sin orm con datasource provisto por payara micro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se crea rama nueva sin orm con datasource provisto por payara micro" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -990,14 +1310,8 @@
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="87" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1006,136 +1320,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Objective.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/PersistentEntity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-examples/0.12-SNAPSHOT/ta4j-examples-0.12-SNAPSHOT.jar!/ta4jexamples/strategies/GlobalExtremaStrategy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="80" column="23" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Value.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-core/0.12-SNAPSHOT/ta4j-core-0.12-SNAPSHOT.jar!/org/ta4j/core/BaseBar.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/factories/DataSourceFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/repositories/JDOProducer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/repositories/PeriodRepository.java" />
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/annotations/cl/dsoto/trading/model/QStrategy.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ProblemType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ValueDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/SolutionDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/StrategyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,19 +1334,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ObjectiveDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1166,22 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,7 +1352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1197,9 +1359,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1210,24 +1370,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-examples/0.12-SNAPSHOT/ta4j-examples-0.12-SNAPSHOT.jar!/ta4jexamples/strategies/CCICorrectionStrategy.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-examples/0.12-SNAPSHOT/ta4j-examples-0.12-SNAPSHOT.jar!/ta4jexamples/strategies/CCICorrectionStrategy.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ProblemType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/uma/jmetal/jmetal-exec/5.7-SNAPSHOT/jmetal-exec-5.7-SNAPSHOT.jar!/org/uma/jmetal/runner/singleobjective/GenerationalGeneticAlgorithmStockMarketIntegerRunner.class" />
+    <entry file="jar://$USER_HOME$/jdk1.8.0_144/src.zip!/javax/sql/DataSource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/StrategyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="105">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
         </state>
       </provider>
@@ -1236,17 +1436,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ApplicationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/8.0/javaee-web-api-8.0.jar!/javax/enterprise/context/RequestScoped.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Optimization.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1254,107 +1447,319 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Objective.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/PeriodBar.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-core/0.12-SNAPSHOT/ta4j-core-0.12-SNAPSHOT.jar!/org/ta4j/core/TimeSeries.class" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org-ta4j/ta4j-core/0.12-SNAPSHOT/ta4j-core-0.12-SNAPSHOT.jar!/org/ta4j/core/BaseTimeSeries.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/TimeFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/StrategyHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/ForwardTestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/ForwardTestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTestBar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/ForwardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/ForwardTestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/ForwardTestBarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ForwardTestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="55" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Strategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Objective.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/TestManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/filters/CORSFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#690#691#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/ApplicationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/services/PeriodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="63" column="9" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodBarView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/mappers/PeriodMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/views/PeriodView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#784#785#0" expanded="false" />
+            <element signature="e#816#817#0" expanded="false" />
+            <element signature="e#862#863#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#1508#1509#0" expanded="false" />
+            <element signature="e#1533#1534#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1595#1596#0" expanded="false" />
+            <element signature="e#1626#1627#0" expanded="false" />
+            <element signature="e#1653#1654#0" expanded="false" />
+            <element signature="e#1693#1694#0" expanded="false" />
+            <element signature="e#1725#1726#0" expanded="false" />
+            <element signature="e#1764#1765#0" expanded="false" />
+            <element signature="e#1796#1797#0" expanded="false" />
+            <element signature="e#1849#1850#0" expanded="false" />
+            <element signature="e#1891#1892#0" expanded="false" />
+            <element signature="e#1921#1922#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="false" />
+            <element signature="e#1989#1990#0" expanded="false" />
+            <element signature="e#2023#2024#0" expanded="false" />
+            <element signature="e#2051#2052#0" expanded="false" />
+            <element signature="e#2077#2078#0" expanded="false" />
+            <element signature="e#2113#2114#0" expanded="false" />
+            <element signature="e#2143#2144#0" expanded="false" />
+            <element signature="e#2184#2185#0" expanded="false" />
+            <element signature="e#2221#2222#0" expanded="false" />
+            <element signature="e#2281#2282#0" expanded="false" />
+            <element signature="e#2333#2334#0" expanded="false" />
+            <element signature="e#2381#2382#0" expanded="false" />
+            <element signature="e#2425#2426#0" expanded="false" />
+            <element signature="e#2607#2608#0" expanded="false" />
+            <element signature="e#2645#2646#0" expanded="false" />
+            <element signature="e#2707#2708#0" expanded="false" />
+            <element signature="e#2761#2762#0" expanded="false" />
+            <element signature="e#2805#2806#0" expanded="false" />
+            <element signature="e#2845#2846#0" expanded="false" />
+            <element signature="e#2911#2912#0" expanded="false" />
+            <element signature="e#2969#2970#0" expanded="false" />
+            <element signature="e#3004#3005#0" expanded="false" />
+            <element signature="e#3035#3036#0" expanded="false" />
+            <element signature="e#3083#3084#0" expanded="false" />
+            <element signature="e#3123#3124#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/SolutionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/StrategyDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/BarDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="3045">
+          <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/Period.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1638#1639#0" expanded="false" />
+            <element signature="e#1673#1674#0" expanded="false" />
+            <element signature="e#1740#1741#0" expanded="false" />
+            <element signature="e#1788#1789#0" expanded="false" />
+            <element signature="e#1828#1829#0" expanded="false" />
+            <element signature="e#1855#1856#0" expanded="false" />
+            <element signature="e#1904#1905#0" expanded="false" />
+            <element signature="e#1936#1937#0" expanded="false" />
+            <element signature="e#2502#2503#0" expanded="false" />
+            <element signature="e#2527#2528#0" expanded="false" />
+            <element signature="e#2561#2562#0" expanded="false" />
+            <element signature="e#2589#2590#0" expanded="false" />
+            <element signature="e#2620#2621#0" expanded="false" />
+            <element signature="e#2647#2648#0" expanded="false" />
+            <element signature="e#2687#2688#0" expanded="false" />
+            <element signature="e#2719#2720#0" expanded="false" />
+            <element signature="e#2758#2759#0" expanded="false" />
+            <element signature="e#2790#2791#0" expanded="false" />
+            <element signature="e#2843#2844#0" expanded="false" />
+            <element signature="e#2885#2886#0" expanded="false" />
+            <element signature="e#2915#2916#0" expanded="false" />
+            <element signature="e#2943#2944#0" expanded="false" />
+            <element signature="e#2983#2984#0" expanded="false" />
+            <element signature="e#3017#3018#0" expanded="false" />
+            <element signature="e#3045#3046#0" expanded="false" />
+            <element signature="e#3071#3072#0" expanded="false" />
+            <element signature="e#3107#3108#0" expanded="false" />
+            <element signature="e#3137#3138#0" expanded="false" />
+            <element signature="e#3176#3177#0" expanded="false" />
+            <element signature="e#3208#3209#0" expanded="false" />
+            <element signature="e#3261#3262#0" expanded="false" />
+            <element signature="e#3303#3304#0" expanded="false" />
+            <element signature="e#3355#3356#0" expanded="false" />
+            <element signature="e#3391#3392#0" expanded="false" />
+            <element signature="e#3461#3462#0" expanded="false" />
+            <element signature="e#3511#3512#0" expanded="false" />
+            <element signature="e#8413#8414#0" expanded="false" />
+            <element signature="e#8440#8441#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/model/PeriodBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1106#1107#0" expanded="false" />
+            <element signature="e#1131#1132#0" expanded="false" />
+            <element signature="e#1165#1166#0" expanded="false" />
+            <element signature="e#1193#1194#0" expanded="false" />
+            <element signature="e#1226#1227#0" expanded="false" />
+            <element signature="e#1255#1256#0" expanded="false" />
+            <element signature="e#1299#1300#0" expanded="false" />
+            <element signature="e#1335#1336#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/daos/PeriodDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="85" />
+        <state relative-caret-position="15">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cl/dsoto/trading/managers/PeriodManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2983">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,11 +1769,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>TradingService:war</last-edited>
+          <last-edited>TradingService:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.38834357" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1400,7 +1805,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1412,7 +1817,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA|TradingService</last-edited>
+          <last-edited>Web|TradingService</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1436,7 +1841,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: javax.transaction:transaction-api:1.1</last-edited>
+          <last-edited>Maven: javax:javaee-web-api:8.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1450,9 +1855,9 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
+    <option value="install:install-file -Dfile=jmetal-exec-5.7-SNAPSHOT.jar -DgroupId=org.uma.jmetal -DartifactId=jmetal-exec -Dversion=5.7-SNAPSHOT -Dpackaging=jar" />
     <option value="install:install-file -Dfile=jmetal-algorithm-5.7-SNAPSHOT.jar -DgroupId=org.uma.jmetal -DartifactId=jmetal-algorithm -Dversion=5.7-SNAPSHOT -Dpackaging=jar" />
     <option value="install:install-file -Dfile=jmetal-problem-5.7-SNAPSHOT.jar -DgroupId=org.uma.jmetal -DartifactId=jmetal-problem -Dversion=5.7-SNAPSHOT -Dpackaging=jar" />
-    <option value="install:install-file -Dfile=jmetal-exec-5.7-SNAPSHOT.jar -DgroupId=org.uma.jmetal -DartifactId=jmetal-exec -Dversion=5.7-SNAPSHOT -Dpackaging=jar" />
     <option value="install:install-file -Dfile=jmetal-exec-5.7-SNAPSHOT-jar-with-dependencies.jar -DgroupId=org.uma.jmetal -DartifactId=jmetal-exec -Dversion=5.7-SNAPSHOT -Dpackaging=jar" />
     <option value="install:install-file -Dfile=postgresql-9.4.1208.jre7.jar -DgroupId=org.postgresql -DartifactId=postgresql -Dversion=9.4.1208 -Dpackaging=jar" />
     <option value="datanucleus:enhance" />

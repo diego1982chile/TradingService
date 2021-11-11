@@ -39,18 +39,18 @@ public enum TimeFrame implements Serializable {
     /**
      * Este método es responsable de retornar el AuditActionType asociado al ID <code>idAuditActionType</code>.
      *
-     * @param idProblemType El identificador del AuditActionType.
+     * @param timeFrameId El identificador del AuditActionType.
      *
      * @return El objeto que representa la acción de auditoría.
      */
-    public static TimeFrame valueOf(long idProblemType) {
-        for (TimeFrame problemType : values()) {
-            if (problemType.getId() == idProblemType) {
-                return problemType;
+    public static TimeFrame valueOf(long timeFrameId) {
+        for (TimeFrame timeFrame : values()) {
+            if (timeFrame.getId() == timeFrameId) {
+                return timeFrame;
             }
         }
 
-        throw new IllegalArgumentException("No hay un tipo de problema con ID=" + idProblemType);
+        throw new IllegalArgumentException("No hay un tipo de problema con ID=" + timeFrameId);
     }
 
 }

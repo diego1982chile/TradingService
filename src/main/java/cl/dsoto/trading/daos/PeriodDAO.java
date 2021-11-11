@@ -3,8 +3,6 @@ package cl.dsoto.trading.daos;
 import cl.dsoto.trading.model.*;
 
 import javax.annotation.Resource;
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.sql.DataSource;
@@ -32,6 +30,9 @@ public class PeriodDAO {
     @Inject
     private BarDAO barDAO;
 
+    @Inject
+    private ForwardTestDAO forwardTestDAO;
+
     @Resource(lookup = "java:global/TradingDS")
     private DataSource dataSource;
 
@@ -53,7 +54,42 @@ public class PeriodDAO {
             ResultSet rs = call.getResultSet();
 
             if (rs.next()) {
-                period = createPeriodFromResultSet(rs);
+                period = createPeriodFromResultSet(rs, null);
+            }
+            else {
+                String errorMsg = "Error al recuperar la descripción de la BDD.";
+                logger.log(Level.SEVERE, errorMsg);
+                throw new Exception(errorMsg);
+            }
+
+        } catch (SQLException e) {
+            String errorMsg = "Error al recuperar la descripción de la BDD.";
+            logger.log(Level.SEVERE, e.getMessage());
+            throw new Exception(e.getMessage());
+        }
+
+        return period;
+    }
+
+    public Period getPeriodByForwardTest(ForwardTest forwardTest) throws Exception {
+
+        Period period = null;
+
+        String sql = "{call trd.get_period_by_forward_test_id(?)}";
+
+        try (Connection connect = dataSource.getConnection();
+             CallableStatement call = connect.prepareCall(sql)) {
+
+            call.setLong(1, forwardTest.getId());
+
+            call.execute();
+
+            logger.log(Level.INFO, "Registros recuperadas:");
+
+            ResultSet rs = call.getResultSet();
+
+            if (rs.next()) {
+                period = createPeriodFromResultSet(rs, forwardTest);
             }
             else {
                 String errorMsg = "Error al recuperar la descripción de la BDD.";
@@ -134,7 +170,7 @@ public class PeriodDAO {
             ResultSet rs = call.getResultSet();
 
             while (rs.next()) {
-                periodList.add(createPeriodFromResultSet(rs));
+                periodList.add(createPeriodFromResultSet(rs, null));
             }
 
         } catch (SQLException e) {
@@ -146,7 +182,24 @@ public class PeriodDAO {
         return periodList;
     }
 
-    private Period createPeriodFromResultSet(ResultSet resultSet) throws Exception {
+
+    public void delete(Period period) throws Exception {
+
+        String sql = "{call trd.delete_period(?)}";
+
+        try (Connection connection = dataSource.getConnection();
+             CallableStatement call = connection.prepareCall(sql)) {
+
+            call.setLong(1, period.getId());
+            call.execute();
+
+        } catch (SQLException e) {
+            String errorMessage = "No se pudo eliminar el period: " + period.toString();
+            throw new Exception(e.getMessage());
+        }
+    }
+
+    private Period createPeriodFromResultSet(ResultSet resultSet, ForwardTest forwardTest) throws Exception {
 
         long id = resultSet.getLong("id");
 
@@ -162,6 +215,13 @@ public class PeriodDAO {
         period.setOptimizations(optimizationDAO.getOptimizationsByPeriod(period));
 
         period.setBars(barDAO.getBars(period));
+
+        if(forwardTest == null) {
+            period.setForwardTests(forwardTestDAO.getForwardTestsByPeriod(period));
+        }
+        else {
+            period.getForwardTests().add(forwardTest);
+        }
 
         return period;
     }
